@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!--  ogp: <head prefix=”og:http:------ fb:http:------------- website:http:------->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/ress@4.0.0/dist/ress.min.css"
+    />
+    <title>WEB test 農園</title>
+    <!-- css -->
+    <link rel="stylesheet" href="..//sass/style2.css" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
+    <script src="../java/main.js" defer></script>
+    <!-- ogp -->
+    <meta property=”og:url” content=”https://WEBtest/html/index.html” />
+    <meta property="”og:type”" content="”website”" />
+    <meta
+      property="”og:title”"
+      content="”自然の恵み農園｜自然の恵みを感じ、豊かな未来をつくる”"
+    />
+    <meta property="”og:image”" content="”ogp-image.png”" />
+    <meta property="”og:site_name”" content="”自然の恵み農園”" />
+    <meta
+      property="”og:description”"
+      content="”自然の恵み農園は、農園運営・牧場運営・オンライン販売を通じ、自然の恵みを感じて、豊かな未来を想像して頂ける取り組みを行っています。”"
+    />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary_large_image」" />
+    <meta name="twitter:site" content="Xアカウント名" />
+    <meta property="”fb:app_id”" content="”FacebookのアプリID”" />
+
+    <head>
+      <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+      <link rel="stylesheet" href="style/style.css" />
+    </head>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header_inner">
+        <div class="header_logo-link">
+          <a href="index.html">
+            <img
+              src="../img/logo.svg"
+              alt="header_logo-link"
+              width="100%"
+              height="100%"
+              class="header_logo-link_img"
+            />
+          </a>
+        </div>
+
+        <div class="header_menu-box">
+          <div class="hamburger_menu">
+            <span class="hamburger_menu-bar"></span>
+            <span class="hamburger_menu-bar"></span>
+          </div>
+          <p class="menu-txt">MENU</p>
+        </div>
+
+        <div class="header_box">
+          <nav class="header-nav">
+            <ul class="header-nav_list">
+              <li class="header-nav_list_item">
+                <a href="/html/index.html" class="header-nav_link"
+                  >私たちについて</a
+                >
+              </li>
+              <li class="header-nav_list_item">
+                <a href="/html/index.html" class="header-nav_link">活動紹介</a>
+              </li>
+              <li class="header-nav_list_item">
+                <a href="/html/index.html" class="header-nav_link"
+                  >よくあるご質問</a
+                >
+              </li>
+              <li class="header-nav_list_item">
+                <a href="/html/index.html" class="header-nav_link">お知らせ</a>
+              </li>
+              <li class="header-nav_list_item">
+                <a href="" class="header-nav_link">アクセス</a>
+              </li>
+              <li class="header-nav_list_item">
+                <a href="" class="header-nav_link">お問い合わせ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+        <div class="home">
+          <p class="home_center"><a href="./index.html">ホーム</a></p>
+          <p class="home_next"><a href="./arctivite.html">お問い合わせ</a></p>
+        </div>
+
+    
+          <div class="main-title6">
+            <h3 class="main-title_name">お問い合わせ</h3>
+          </div>
+          <p class="content_page">お仕事のご相談、農園体験、牧場の見学、</br> その他ご質問など、お気軽にお問い合わせください。</p>
+           <div class="content_box">
+            <form action="" class="contact_form">
+              <dl class="contact_form_list">
+                <dt class="contact_form_heading">
+              お問い合わせ種別<span class="contact_form_example">必須</span>
+            </dt>
+
+
+            <dd class="contact_form_detail">
+            <div class="contact_form_btn-click">
+            <input type="text" class="contact_form_btn-text"　name="text" placeholder="選択してください" required></input>
+<!--クリックイベントを発生 -->
+
+            <div class="contact_form_type">
+            <label for="farm_tour" class="contact_form_label">
+              <input type="radio" name="contact_radio" value="farm_tour" id="farm_tour">
+              農園見学・体験について</label>
+
+            <label for="farm_onlinesales" class="contact_form_label">
+              <input type="radio" name="contact_radio" value="farm_onlinesales" id="farm_onlinesales">
+              オンライン販売</label>
+            <label for="farm_another" class="contact_form_label">
+              <input type="radio" name="contact_radio" value="farm_another" id="farm_another">
+              その他</label>
+              </div>
+
+            <img src="/WEBtest/img/single.webp" alt="a"class="contact_form_btn-image">
+              </div>
+            </dd>
+            <dt class="contact_form_heading">
+              お名前<span class="contact_form_example">必須</span>
+            </dt>
+            <dd class="contact_form_detail">
+              <input type="name" class="contact_form_input" name="name" placeholder="" required/>
+            </dd>
+            <dt class="contact_form_heading">
+              メールアドレス<span class="contact_form_example">必須</span>
+            </dt>
+            <dd class="contact_form_detail">
+              <input type="email" class="contact_form_input" name="email" placeholder="" required/>
+            </dd>
+            <dt class="contact_form_heading">
+              電話番号
+            </dt>
+            <dd class="contact_form_detail">
+              <input type="tel" class="contact_form_input" name="tel" placeholder="" />
+            </dd>
+
+            <dt class="contact_form_heading">
+              お問い合わせ内容
+            </dt>
+            <dd class="contact_form_detail">
+              <textarea
+                class="contact_form_textarea"
+                placeholder="ご自由にご記入ください。"
+              ></textarea>
+            </dd>
+          </dl>
+            <div class="btn_contact_form">
+              <input
+                type="submit"
+                class="btn_input"
+                value="確認する"
+              />
+            </div>
+    
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer_inner">
+        <div class="footer_logo">
+          <a href="footer_logo">
+            <img src="/WEBtest/img/logo.svg" />
+          </a>
+        </div>
+
+        <address class="footer_address-map">
+          〒123-4567<br />
+          千葉県〇〇市××町1丁目23-45
+        </address>
+        <address class="footer_address-tel">
+          TEL：<a href="tel:">123-4567-8910</a> <br />
+          FAX：12-345-6789
+        </address>
+
+        <div class="footer_box">
+          <nav class="footer_nav">
+            <ul class="footer_nav-list">
+              <li class="footer_nav-item">
+                <a href="/html/index.html" class="footer_nav-link">ホーム</a>
+              </li>
+              <li class="footer_nav-item">
+                <a href="/html/index.html" class="footer_nav-link"
+                  >私たちについて</a
+                >
+              </li>
+              <li class="footer_nav-item">
+                <a href="/html/index.html" class="footer_nav-link">活動紹介</a>
+              </li>
+              <li class="footer_nav-item">
+                <a href="/html/index.html" class="footer_nav-link"
+                  >よくあるご質問</a
+                >
+              </li>
+              <li class="footer_nav-item">
+                <a href="/html/index.html" class="footer_nav-link">お知らせ</a>
+              </li>
+              <li class="footer_nav-item">
+                <a href="" class="footer_nav-link">アクセス</a>
+              </li>
+              <li class="footer_nav-item">
+                <a href="" class="footer_nav-link">お問い合わせ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer_icon">
+          <nav class="icon_nav">
+            <ul class="icon_nav-list">
+              <li class="icon_nav-item">
+                <a href=""
+                  ><img
+                    src="/WEBtest/img/insta-icon.svg"
+                    alt="Instagram"
+                    class="icon_nav-img"
+                /></a>
+              </li>
+              <li class="icon_nav-item">
+                <a href=""
+                  ><img
+                    src="/WEBtest/img/x-icon.svg"
+                    alt="X"
+                    class="icon_nav-img"
+                /></a>
+              </li>
+              <li class="icon_nav-item">
+                <a href=""
+                  ><img
+                    src="/WEBtest/img/youtube-icon.svg"
+                    alt="Youtube"
+                    class="icon_nav-img"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <p class="footer_copy">
+          ©︎ <a href="">shizen-no-megumi-nouen Inc .</a> 2023
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
+
+            <!-- <dt class="contact_form_heading">
+              お問い合わせ項目
+              <span class="contact_form_required">必須</span>
+            </dt> -->
+            <!-- <dd class="contact_form_detail">
+              <ul class="contact_form_radio-list">
+                <li class="contact_form_radio-item">
+                  <input
+                    type="radio"
+                    name="content"
+                    value=""
+                    id="item-a"
+                    class="contact_form_radio"
+                    checked=""
+                  /><label for="item-a" class="contact_form_label">項目A</label>
+                </li>
+                <li class="contact_form_radio-item">
+                  <input
+                    type="radio"
+                    name="content"
+                    value=""
+                    id="item-b"
+                    class="contact_form_radio"
+                  /><label for="item-b" class="contact_form_label">項目B</label>
+                </li>
+                <li class="contact_form_radio-item">
+                  <input
+                    type="radio"
+                    name="content"
+                    value=""
+                    id="item-c"
+                    class="contact_form_radio"
+                  /><label for="item-c" class="contact_form_label">項目C</label>
+                </li>
+                <li class="contact_form_radio-item">
+                  <input
+                    type="radio"
+                    name="content"
+                    value=""
+                    id="item-d"
+                    class="contact_form_radio"
+                  /><label for="item-d" class="contact_form_label">項目D</label>
+                </li>
+              </ul>
+            </dd> -->

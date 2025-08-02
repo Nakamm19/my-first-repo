@@ -1,0 +1,64 @@
+@use "../globar" as *;
+
+.top_news-btn {
+  width: 301px;
+  height: 70px;
+  border: 2px solid $main-color;
+  border-radius: 50px;
+  background-color: $white-color;
+  color: $main-color;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.top_faq-btn {
+  width: 301px;
+  height: 70px;
+  margin: 15px 22px;
+  padding: 22px 97px 21px 86px;
+  border: 2px solid $main-color;
+  border-radius: 50px;
+  background-color: $white-color;
+  color: $main-color;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  white-space: nowrap;
+
+  @include bp(lg) {
+    margin: 35px 0px 35px;
+  }
+}
+
+.sparate-page_btn {
+  width: 301px;
+  height: 70px;
+  border: 2px solid $main-color;
+  border-radius: 50px;
+  background-color: $white-color;
+  color: $main-color;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+//contact
+
+.btn_contact_form {
+  max-width: 200px;
+  height: 50px;
+  margin: 30px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid $main-color;
+  border-radius: 50px;
+}
+
+.btn_input {
+  font-weight: bold;
+  letter-spacing: 1.6px;
+  color: $main-color;
+}

@@ -1,0 +1,234 @@
+@use "../globar" as *;
+
+.main-title {
+  width: 130px;
+  height: 40px;
+  position: relative;
+  white-space: nowrap;
+  color: $txt-color;
+  letter-spacing: 3px;
+  @include bp(lg) {
+    width: 172px;
+    height: 53px;
+  }
+  &_name {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    font-size: 30px;
+    @include bp(lg) {
+      width: 260px;
+      font-size: 40px;
+      text-align: left;
+    }
+  }
+  &::after {
+    content: "";
+    background-image: url(../img/title-line.svg);
+    position: absolute;
+    width: 100%;
+    height: 11px;
+    bottom: -5px;
+    background-size: cover;
+    @include bp(lg) {
+      width: 260px;
+      height: 22px;
+      bottom: 0;
+    }
+  }
+}
+
+.main-title2 {
+  width: 228px;
+  height: 42px;
+  position: relative;
+  white-space: nowrap;
+  color: $txt-color;
+  @include bp(lg) {
+    width: 304px;
+    height: 54px;
+  }
+
+  &_name {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    font-size: 30px;
+    @include bp(lg) {
+      text-align: center;
+      font-size: 40px;
+      letter-spacing: 4px;
+    }
+  }
+
+  &::after {
+    content: "";
+    background-image: url(../img/title-line.svg);
+    position: absolute;
+    width: 100%;
+    height: 19px;
+    bottom: -2px;
+    background-size: cover;
+    @include bp(lg) {
+      height: 26px;
+    }
+  }
+}
+
+.main-title3 {
+  width: 104px;
+  height: 40px;
+  position: relative;
+  white-space: nowrap;
+  color: $txt-color;
+
+  &_name {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    font-size: 30px;
+  }
+  &::after {
+    content: "";
+    background-image: url(../img/title-line.svg);
+    position: absolute;
+    width: 100%;
+    z-index: -10;
+    height: 11px;
+    bottom: 0px;
+    background-size: cover;
+  }
+}
+
+.main-title4 {
+  width: 100%;
+  height: 70px;
+  margin: 37px 0 10px 12px;
+  text-align: left;
+  color: $txt-color;
+  letter-spacing: 2.5px;
+  line-height: 37px;
+  @include bp(lg) {
+    line-height: 53px;
+  }
+
+  &_name {
+    white-space: normal;
+    font-size: 25px;
+    @include bp(lg) {
+      font-size: 40px;
+    }
+  }
+}
+.main-title5 {
+  width: 100%;
+  height: 70px;
+  margin: 37px 0 10px 12px;
+  text-align: left;
+  color: $txt-color;
+  letter-spacing: 2.5px;
+  line-height: 37px;
+  @include bp(lg) {
+    line-height: 53px;
+    margin: 72px 0 20px 203px;
+  }
+
+  &_name {
+    white-space: normal;
+    font-size: 25px;
+    @include bp(lg) {
+      font-size: 40px;
+    }
+  }
+}
+
+// spararate-page
+.title {
+  &_content {
+    height: 27px;
+    color: $txt-color;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &_headline {
+    width: 224px;
+    height: 27px;
+    margin-bottom: 18px;
+    border-bottom: 2px solid $main-color;
+    @include bp(lg) {
+      width: 270px;
+      height: 32px;
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 22px;
+    }
+  }
+  &_headline2 {
+    width: 291px;
+    height: 51px;
+    margin-left: 9px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    line-height: 27px;
+    @include bp(lg) {
+      width: auto;
+      height: 27px;
+      font-size: 20px;
+    }
+  }
+  &_line {
+    width: 0;
+    height: 46px;
+    border-left: 10px solid $main-color;
+
+    @include bp(lg) {
+      height: 27px;
+    }
+  }
+}
+
+// contact
+
+.main-title6 {
+  width: 195px;
+  height: 42px;
+  position: relative;
+  white-space: nowrap;
+  color: $txt-color;
+  letter-spacing: 3px;
+  margin-top: 36px;
+  margin-left: 14px;
+  margin-bottom: 20px;
+  @include bp(lg) {
+    width: 172px;
+    height: 53px;
+  }
+  &_name {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    font-size: 30px;
+    @include bp(lg) {
+      width: 260px;
+      font-size: 40px;
+      text-align: left;
+    }
+  }
+  &::after {
+    content: "";
+    background-image: url(../img/title-line.svg);
+    position: absolute;
+    width: 100%;
+    height: 16px;
+    bottom: -5px;
+    background-size: cover;
+    @include bp(lg) {
+      width: 260px;
+      height: 22px;
+      bottom: 0;
+    }
+  }
+}

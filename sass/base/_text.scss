@@ -1,0 +1,160 @@
+@use "../globar" as *;
+
+.sales-copy {
+  width: 100%;
+  height: 181px;
+  color: $txt-color;
+  font-size: 16px;
+  vertical-align: top;
+  text-align: center;
+  font-weight: bold;
+  line-height: 32px;
+
+  @include bp(lg){
+    width: auto;
+    height: 85px;
+    letter-spacing: 0;
+    line-height: 32px;
+  }
+  &_br{
+    @include bp(lg){
+      display: none;
+    }
+  }
+}
+
+.sales-copy2 {
+  width: 100%;
+  height: 149px;
+  color: $txt-color;
+  font-size: 16px;
+
+  text-align: center;
+  font-weight: bold;
+  line-height: 32px;
+
+  @include bp(lg){
+    width: auto;
+    height: 85px;
+    letter-spacing: 0;
+    line-height: 32px;
+  }
+
+  &_br{
+    @include bp(lg){
+      display: none;
+    }
+  }
+}
+
+.inform_page{
+  text-align: left;
+  line-height: 1.5em;
+  font-size: 16px;
+  color: $txt-color;
+  font-stretch: 100%;
+}
+
+.news-copy{
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.6em;
+
+  &_br{
+    display: none;
+    @include bp(lg){
+      display: flex;
+    }
+  }
+}
+// ---------------------------page-text　一覧
+
+.news_copy{
+  text-align: left;
+  font-size: 16px;
+  color: $main-color;
+}
+
+.top_news-page{
+  font-size: 16px;
+  font-weight: bold;
+  color: $txt-color;
+  line-height: 1.5em;
+  @include bp(lg){
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 0px;
+  }
+}
+
+// QA page----------------------------------------------------------------------------------
+.qa_question-dt {
+  width: 18px;
+  font-size: 22px;
+  line-height: 2em;
+  color: $main-color;
+  @include bp(lg){
+    width: 26px;
+    font-size: 35px;
+    line-height: 0em;
+  }
+}
+
+.qa_question-dd {
+  width: 270px;
+  padding: 0px 11px 0px 10px;
+  color: $txt-color;
+  font-size: 16px;
+  font-weight: bold;
+  @include bp(lg){
+    width: 791px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 11px 0;
+  }
+}
+
+.qa_answer-dt {
+  width: 18px;
+  font-size: 25px;
+  line-height: 1.5em;
+  color: $accent-color;
+  display: none;
+  &_active{
+    display: flex;
+  }
+  @include bp(lg){
+    width: 23px;
+    font-size: 35px;
+    line-height: 0em;
+  }
+}
+
+.qa_answer-dd {
+  width: 305px;
+  height: auto;
+  font-size: 16px;
+  display: none;
+  text-align: left;
+  font-weight: 300;
+  letter-spacing: 0;
+  &_active{
+    display: flex;
+
+
+    @include bp(lg){
+      display: flex;
+      width: auto;
+      font-size: 20px;
+      letter-spacing: 0;
+      line-height: 32px;
+      font-weight: 300;
+    }
+  }
+
+}
+
+
+
+
+

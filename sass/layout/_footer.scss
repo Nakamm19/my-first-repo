@@ -1,0 +1,148 @@
+@use "../globar" as *;
+
+.footer {
+  height: 562px;
+  background-color: $white-color;
+  @include bp(lg) {
+    height: 351px;
+    padding-bottom: 31px;
+  }
+
+  &_inner {
+    padding-top: 30px;
+    padding-left: 14px;
+    @include bp(lg) {
+      padding-top: 77px;
+      padding-left: 203px;
+      position: relative;
+    }
+  }
+
+  &_logo {
+    width: 202px;
+    height: 35px;
+  }
+
+  &_address-map {
+    height: 42px;
+    margin-top: 27px;
+    @include bp(lg) {
+      position: absolute;
+      top: 156px;
+      margin-top: 0;
+    }
+  }
+  &_address-tel {
+    height: 42px;
+    margin-top: 31px;
+    @include bp(lg) {
+      position: absolute;
+      top: 230px;
+      margin-top: 0;
+    }
+  }
+  &_address-link {
+    text-decoration: none;
+  }
+
+  &_box {
+    width: auto;
+    height: 166px;
+    margin-top: 31px;
+    @include bp(lg) {
+      height: 21px;
+      position: absolute;
+      top: 77px;
+      left: 592px;
+      margin-top: 0;
+    }
+  }
+  &_nav {
+    display: block;
+  }
+
+  &_nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+    @include bp(lg) {
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+  &_nav-item {
+    height: 21px;
+    color: $gray-color;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  &_nav-link {
+    text-decoration: none;
+  }
+
+  &_icon {
+    height: 50px;
+    margin-top: 28px;
+    margin-right: 12px;
+    display: flex;
+    justify-content: flex-end;
+
+    @include bp(lg) {
+      margin-top: 0;
+      margin-right: 0;
+      width: 167px;
+      position: absolute;
+      top: 226px;
+      left: 976px;
+    }
+  }
+
+  &_copy {
+    margin-top: 39px;
+    text-align: center;
+    color: $gray-color;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    @include bp(lg){
+      margin: 0px 0px 31px;
+      position: absolute;
+      top: 304px;
+      left: 558px;
+    }
+  }
+  &_copy-link {
+    text-decoration: none;
+  }
+}
+
+.icon {
+  &_nav {
+    width: 200px;
+  }
+
+  &_nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+  }
+
+  &_nav-item {
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 1px 1px $gray-color;
+    text-align: center;
+  }
+
+  &_nav-img {
+    width: 25px;
+    height: 25px;
+  }
+}

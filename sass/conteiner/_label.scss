@@ -1,0 +1,181 @@
+@use "../globar" as *;
+
+.label-style {
+  height: 50px;
+  width: 110px;
+  display: inline-block;
+  white-space: nowrap;
+  padding: 15px 1px 16px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px #00000029;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+
+  @include bp(lg) {
+    width: 190px;
+    height: 65px;
+    padding: 0;
+    border-radius: 20px;
+    line-height: 3.25em;
+    font-size: 20px;
+  }
+
+  &:nth-child(3) {
+    font-size: 14px;
+    @include bp(lg) {
+      text-align: left;
+      padding-left: 20px;
+      font-size: 20px;
+    }
+  }
+  &:nth-child(1) {
+    background-color: $main-color;
+    color: $white-color;
+  }
+  &:not(:nth-child(1)) {
+    background-color: $white-color;
+    color: $accent-color;
+  }
+}
+
+.qa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  @include bp(lg) {
+    gap: 50px;
+  }
+
+  &_laber {
+    width: 345px;
+    padding: 30px 17px 20px 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px 0px;
+    border: 3px solid $main-color;
+    background-color: $white-color;
+    border-radius: 30px;
+    position: relative;
+    @include bp(lg) {
+      width: 960px;
+      justify-content: flex-start;
+      padding: 10px 40px 13px;
+      border-radius: 50px;
+      gap: 18px;
+      padding: 10px 40px 13px 40px;
+    }
+
+
+    &::before {
+      content: "";
+      display: block;
+      width: 347px;
+      height: 20px;
+      position: absolute;
+      top: 52%;
+      left: 0;
+      border-right: 6px solid $white-color;
+      border-left: 6px solid $white-color;
+      transform: translate(-1%, -50%);
+      @include bp(lg) {
+        width: 965px;
+        left: 6px;
+        border-right: 10px solid $white-color;
+        border-left: 10px solid $white-color;
+      }
+    }
+
+    &_active::before {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 30px;
+      top: 52%;
+      left: 0;
+      border-right: 6px solid $white-color;
+      border-left: 6px solid $white-color;
+      transform: translate(-1%, -50%);
+    }
+
+    &_active {
+      height: 241px;
+      width: 345px;
+      padding: 20px 13px 20px 22px;
+      flex-wrap: wrap;
+      border: 3px solid #93c572;
+
+      @include bp(lg) {
+        width: 960px;
+        height: 190px;
+        padding: 20px 40px 45px 40px;
+      }
+    }
+  }
+
+  &_icon {
+    width: 15px;
+    height: 3px;
+    background: $main-color;
+    transform: rotateZ(90deg);
+
+    @include bp(lg) {
+      width: 21px;
+      height: 3px;
+    }
+    &_active {
+      height: 0;
+    }
+  }
+
+  &_part {
+    width: 15px;
+    height: 3px;
+    background: $main-color;
+    display: flex;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(0px) rotateZ(90deg);
+    @include bp(lg) {
+      width: 21px;
+    }
+  }
+}
+
+// -- dt::after −　→　+　へ変更js -------------------------------------------------------------------------------
+
+.label-style {
+  &_second {
+    height: 44px;
+    padding: 11px 47px;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0px 3px 6px #00000029;
+
+    @include bp(lg){
+      width: 126px;
+      padding: 11px 47px 12px 40px;
+    }
+
+    &:nth-child(1) {
+      background-color: $main-color;
+      color: $white-color;
+    }
+    &:not(:nth-child(1)) {
+      background-color: $base-color;
+      color: $accent-color;
+      text-align: left;
+      @include bp(lg){
+        padding: 11px 41px 12px 18px;
+      }
+    }
+  }
+  &_mode {
+    width: 39px;
+    height: 21px;
+  }
+}

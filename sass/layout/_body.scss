@@ -1,0 +1,17 @@
+@use "../globar" as *;
+
+.body {
+  width: 100%;
+  height: auto;
+  color: $txt-color;
+  font-size: 16px;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.8;
+  letter-spacing: 0.1em;
+  @include bp(lg) {
+  }
+}
+
+.main {
+  background-color: $base-color;
+}

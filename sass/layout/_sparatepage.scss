@@ -1,0 +1,173 @@
+@use "../globar" as *;
+
+.sparate-page {
+  &_inner {
+    display: flex;
+    margin-left: 14px;
+    gap: 6px;
+
+    @include bp(lg) {
+      margin-left: 203px;
+      margin-bottom: 50px;
+    }
+  }
+  &_category {
+    width: 96px;
+    height: 26px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 2em;
+    font-size: 14px;
+    color: $white-color;
+    background-color: $main-color;
+  }
+
+  //この辺変える。
+  &_faq {
+    width: auto;
+    height: 450px + 80px + 60px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    @include bp(lg) {
+      height: 450px + 115px;
+      margin-top: 0;
+      margin-bottom: 115px;
+    }
+  }
+}
+
+.sparate {
+  &_box {
+    margin: 40px 15px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px #aaa;
+
+    @include bp(lg) {
+      margin: 0 203px 160px;
+      padding: 50px 180px;
+      border-radius: 100px;
+    }
+  }
+}
+
+.sparate-page {
+  &_visual {
+    width: 305px;
+    height: 200px;
+    background-color: #f0f0f0;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 20px;
+    padding: 59px 100px;
+    @include bp(lg) {
+      width: 600px;
+      height: 391px;
+      padding: 112px 193px;
+    }
+
+    &_img {
+      width: 105px;
+      height: 82px;
+      @include bp(lg) {
+        width: 216px;
+        height: 166px;
+      }
+    }
+  }
+
+  &_content {
+    width: 305px;
+    height: 228px;
+    border: 2px solid $main-color;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding-top: 11px;
+    padding-left: 15px;
+
+    @include bp(lg) {
+      width: 600px;
+      padding-top: 26px;
+      padding-left: 30px;
+      padding-bottom: 25px;
+    }
+  }
+
+  &_box {
+    width: 310px;
+    height: 2069px;
+    margin: 40px 20px 116px;
+
+    @include bp(lg) {
+      width: 600px;
+      height: auto;
+      margin: 75px 0 126px;
+    }
+  }
+
+  &_block {
+    height: auto;
+    margin-bottom: 115px;
+
+    @include bp(lg) {
+      height: auto;
+    }
+  }
+
+  &_tag {
+    width: 305px;
+    display: flex;
+    flex-direction: column;
+    @include bp(lg) {
+      width: 600px;
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+  &_copy {
+    height: 210px;
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 21px;
+    @include bp(lg) {
+      height: auto;
+    }
+  }
+
+  &_block2 {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 110px;
+  }
+
+  &_image {
+    width: 305px;
+    height: 286px;
+    margin-top: 123px;
+    @include bp(lg) {
+      width: 290px;
+      margin-top: 0;
+    }
+  }
+
+  &_nav {
+    margin: 15px 166px 39px 0;
+    width: 145px;
+    height: 105px;
+  }
+
+  &_ul {
+    line-height: 21px;
+    letter-spacing: 0;
+  }
+  &_li {
+    list-style: none;
+  }
+}

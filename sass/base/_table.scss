@@ -1,0 +1,191 @@
+@use "../globar" as *;
+
+.access {
+  &_table-body {
+    height: 350px;
+    display: flex;
+    gap: 0;
+    position: relative;
+
+    @include bp(lg) {
+      display: none;
+    }
+  }
+
+  &_tr-header {
+    width: 139px;
+    height: 350px;
+    border: 3px solid $main-color;
+    background-color: $main-color;
+    border-radius: 50px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    padding-top: 23px;
+    padding-left: 20px;
+    padding-bottom: 31px;
+    text-align: left;
+  }
+
+  &_td-header {
+    width: 100%;
+    height: 21px;
+    font-weight: bold;
+    margin-bottom: 25px;
+
+    &:nth-child(2) {
+      margin-bottom: 65px;
+    }
+    &:nth-last-child(1) {
+      margin-top: 22px;
+      margin-bottom: 0px;
+
+      &::after {
+        content: "拡大地図を表示";
+        font-size: 12px;
+        border-bottom: 1px solid;
+      }
+    }
+  }
+
+  &_tr-text {
+    width: calc(100% - 140px);
+    height: 350px;
+    border: 1px solid $white-color;
+    background-color: $white-color;
+    border-radius: 0px 50px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -2px;
+    left: 137px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+  }
+
+  &_td-text {
+    white-space: wrap;
+    text-align: left;
+    margin-bottom: 26px;
+  }
+
+  &_table-map {
+    width: 345px;
+    height: 250px;
+    z-index: 20;
+
+    @include bp(lg) {
+      display: none;
+    }
+  }
+
+  &_td-map {
+    width: 100%;
+    height: 250px;
+    border-radius: 0px 0px 50px 50px;
+    position: relative;
+  }
+
+  &_map {
+    width: 100%;
+    height: 250px;
+    border-radius: 0px 0px 50px 50px;
+    position: absolute;
+    top: -4px;
+    left: -2px;
+  }
+
+  &_table-body2 {
+    height: 600px;
+    background-color: $main-color;
+    border-radius: 100px 0px 0px 100px;
+  }
+  &_tr-header2 {
+    height: 600px;
+    border: 3px solid $main-color;
+    border-radius: 100px 0px 0px 100px;
+    background-color: $main-color;
+    display: flex;
+    flex-direction: column;
+    padding: 76px 87px 212px 50px;
+    text-align: left;
+  }
+
+  &_td-header2 {
+    width: 100%;
+    height: 21px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 23px;
+
+    &:nth-child(4) {
+      margin-bottom: 66px;
+    }
+    &:nth-last-child(1) {
+      width: 128px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      position: relative;
+
+      &::after {
+        content: "拡大地図を表示";
+        display: flex;
+        font-size: 16px;
+        border-bottom: 1px solid;
+        position: absolute;
+        top: 48px;
+      }
+    }
+  }
+
+  &_table-map2 {
+    width: 710px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_tr-text2 {
+    width: auto;
+    height: 300px;
+    border: 1px solid $white-color;
+    background-color: $white-color;
+    border-radius: 0px 100px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 29px;
+    padding: 79px 0px 50px 50px;
+    font-size: 16px;
+  }
+
+  &_td-text2 {
+    white-space: nowrap;
+    text-align: left;
+  }
+
+  &_td-br {
+    display: none;
+  }
+
+  &_td-map2 {
+    width: 100%;
+    height: 300px;
+    border-radius: 0px 0px 50px 50px;
+    position: relative;
+  }
+
+  &_map2 {
+    width: 108%;
+    height: 300px;
+    border-radius: 0px 0px 100px 0px;
+    position: absolute;
+    top: 8px;
+    left: -50px;
+  }
+}
